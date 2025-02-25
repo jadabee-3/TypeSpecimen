@@ -16,11 +16,13 @@ initial-scale=1.0">
     <header>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#meet">About</a></li>
+                <li>ARCHIVO</li>
+                <li></li>
+                <li><a href="#meet">Designer</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#type-anatomy">Type Anatomy</a></li>
                 <li><a href="#glyphs">Glyphs</a></li>
-                <li><a href="#about">About Archivo</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -29,8 +31,7 @@ initial-scale=1.0">
         <div class="box1"></div>
         <div class="box3">TYPE SPECIMEN</div>
         <div class="box2">ARCHIVO</div>
-        <div class="box4"></div>
-        <img src="images/background.png" width="1425" height="850">
+        <img src="images/cover.png" width="100%" height="100%">
     </section>
   
     <section id="meet">
@@ -44,6 +45,11 @@ initial-scale=1.0">
         </ul>
     </section>
 
+    <div class="image-container">
+        <div class="argentina"><img src="images/argentina.png" alt="image1" width="400" height="550"></div>
+        <div class="hector"><img src="images/hector gatti.png" alt="image2" width="300" height="300"></div>
+      </div>
+
     <section id="about">
         <h1>ABOUT ARCHIVO</h1>
         <ul>
@@ -52,28 +58,134 @@ initial-scale=1.0">
             <li> derived from CHIVO</li>
             <li> It includes Normal, Black and Narrow styles </li>
         </ul>
+        
     </section>
+
+    <div class="fun-facts">
+        <ul>
+            <li>supports over 200 world languages</li>
+            <li>Archivo won an award at Tipos Latinos 2016, which is a Biannual Latin American typeface design competition</li>
+        </ul>
+    </div>
 
     <section id="type-anatomy">
         <h1>Type Anatomy</h1>
-        <p> Lorem Ipsum</p>
     </section>
 
-    <section id="glyphs">
-        <p>Latin Lowercase</p>
-        <div class="box5">GLYPHS</div>
-    </section>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide">Slide 1</div>
+          <div class="slide">Slide 2</div>
+          <div class="slide">Slide 3</div>
+        </div>
+        <button class="prev" onclick="prevSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 26" fill="none">
+            <path d="M0.904739 13.3129L22.8365 0.650592L22.8365 25.9752L0.904739 13.3129Z" fill="black"/>
+          </svg></button>
+        <button class="next" onclick="nextSlide()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 24" fill="none">
+            <path d="M0.433173 0.766789L20.3413 12.2608L0.433172 23.7547L0.433173 0.766789Z" fill="black"/>
+          </svg></button>
+      </div>
 
     <section id="styles">
         <h1>STYLES</h1>
-        <h2>Roman</h2>
-        <h2>Italic</h2>
     </section>
 
-    <section id="axis-of-variable">
-        <h1>AXIS OF VARIABLE</h1>
-        <p>The quick brown fox jumps over</p>
+    <div class="container1">
+        <div class="roman">ROMAN</div>
+        <div class="italic">ITALIC</div>
+    </div>
+
+    <div class="container2">
+        <div class="thin">THIN 100</div>
+        <div class="extra">EXTRALIGHT 200</div>
+        <div class="light">LIGHT 300</div>
+        <div class="regular">REGULAR 400</div>
+        <div class="medium">MEDIUM 500</div>
+        <div class="semi">SEMIBOLD 600</div>
+        <div class="bold">BOLD 700</div>
+        <div class="xbold">EXTRABOLD 800</div>
+        <div class="black">BLACK 900</div>
+    </div>
+
+    <div class="container3">
+        <div class="thinI">THIN 100 ITALIC</div>
+        <div class="extraI">EXTRALIGHT 200 ITALIC</div>
+        <div class="lightI">LIGHT 300 ITALIC</div>
+        <div class="regularI">REGULAR 400 ITALIC</div>
+        <div class="mediumI">MEDIUM 500 ITALIC</div>
+        <div class="semiI">SEMIBOLD 600 ITALIC</div>
+        <div class="boldI">BOLD 700 ITALIC</div>
+        <div class="xboldI">EXTRABOLD 800 ITALIC</div>
+        <div class="blackI">BLACK 900 ITALIC</div>
+    </div>
+
+    <div class="container4">
+        <div class="Athin">a</div>
+        <div class="Aextra">a</div>
+        <div class="Alight">a</div>
+        <div class="Aregular">a</div>
+        <div class="Amedium">a</div>
+        <div class="Asemi">a</div>
+        <div class="Abold">a</div>
+        <div class="Axbold">a</div>
+        <div class="Ablack">a</div>
+    </div>
+
+    <div class="tracking">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <span class="range-text">TRACKING</span>  
+    </div>
+    
+    <div class="leading">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <span class="range-text">LEADING</span>  
+    </div>
+
+    <textarea placeholder="Enter your message"></textarea>
+    
+    <section id="glyphs">
+        <div class="box5">GLYPHS</div> 
     </section>
+
+    <div class="container">
+            <div class="box4">Latin Lowercase</div>
+            <div class="box4">Latin Uppercase</div>
+            <div class="box4">Latin</div>
+            <div class="box4">Numbers</div>
+            <div class="box4">Common Latin</div>
+            <div class="box4">Punctuation</div>
+            <div class="box4">Currency Symbols</div>
+            <div class="box4">Marks</div>
+        </div>
+    
+    <div class="glyphnote"></div>
+
+    <div class="tape"></div>
+
+    <section id="axis-of-variable">
+        <p class="overlay-text">AXIS OF VARIABLE</p>  
+    </section>
+
+    <div class="width">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <span class="range-text">WIDTH</span>  
+    </div>
+    
+    <div class="weight">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <span class="range-text2">WEIGHT</span>
+    </div>
+
+    <p class="text">The quick brown fox jumps over the lazy dog</p>
+
+    <section id="fonts-in-use">
+        <h1>FONTS  IN USE</h1>
+    </section>
+   
+    <div class="stickynote1"></div>
+    <div class="stickynote2"></div>
+
+    <p class="more">See More</p>
 
     <div class="footer">
         <p>Footer</p>
