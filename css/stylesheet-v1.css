@@ -12,6 +12,7 @@ body{
     transparent 79px, #C14B4B 79px, #c14b4b 81px, transparent 81px),
     linear-gradient(#B5D4FC .2em, transparent .1em);
     background-size: 100% 2em;
+    cursor: url('../images/pencil.png'), auto;
 }
 
 /*Sticky Navigation */
