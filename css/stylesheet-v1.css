@@ -12,7 +12,6 @@ body{
     transparent 79px, #C14B4B 79px, #c14b4b 81px, transparent 81px),
     linear-gradient(#B5D4FC .2em, transparent .1em);
     background-size: 100% 2em;
-    cursor: url('images/pencil.png') 32,auto;
 }
 
 /*Sticky Navigation */
@@ -24,7 +23,7 @@ body{
    right: 150px;
    width: 50%;
    justify-content: center;
-   background: #C14B4B;
+   background: #FADD5D;
    color: #000;
    padding: 15px 0;
    text-align: center;
@@ -46,8 +45,8 @@ body{
 }
 
 .navbar ul li a:hover{
-    background: #FADD5D;
-    color: black;
+    background: #C14B4B;
+    color: #B5D4FC;
     border-radius: 0px;
 }
 
@@ -115,7 +114,7 @@ section{
 }
 
 #meet{
-    margin-top: 280px;
+    margin-top: 250px;
     h1{
         color: #FFF;
         -webkit-text-stroke-width: 6px;
@@ -168,11 +167,12 @@ section{
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     margin-left: 650px;
-    margin-top: -600px;
+    margin-top: -615px;
 }
 
 #about{
-    margin-top: 60px;
+    margin-top: 43px;
+    margin-left: 50px;
     h1{
         color: #0552B5;
         -webkit-text-stroke-width: 3px;
@@ -182,7 +182,6 @@ section{
         font-style: italic;
         font-weight: 700;
         line-height: 80%;
-        letter-spacing: 0.1rem;
         word-spacing: 1.92px;
         position: absolute;
         margin-bottom: 570px;
@@ -213,16 +212,18 @@ section{
     b{
         font-family: "Chivo", serif;
         color: #000;
-        font-size: 40px;
+        font-size: 35px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;}
+        line-height: normal;
+        text-decoration: underline wavy #C14B4B;
+    }
 }
 
 .normal{
     color: #0552B5;
     font-family: Archivo;
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 132%; /* 52.8px */
@@ -235,7 +236,7 @@ section{
 .black-style{
     color: #0552B5;
     font-family: "Archivo Black";
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 132%; /* 52.8px */
@@ -248,7 +249,7 @@ section{
 .narrow{
     color: #0552B5;
     font-family: "Archivo Narrow";
-    font-size: 35px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 132%; /* 52.8px */
@@ -392,7 +393,7 @@ section{
 
 #styles{
     padding: 90px;
-    margin-top: -150px;
+    margin-top: -230px;
     h1{color: #FFF;
     text-align: center;
     -webkit-text-stroke-width: 1px;
@@ -588,7 +589,7 @@ section{
     column-gap: 40px;
     margin-left: 160px;
     margin-right: auto;
-    margin-top: 270px;
+    margin-top: 250px;
     text-align: center;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #000;
@@ -608,6 +609,34 @@ section{
 .Axbold{font-weight: 800;}
 .Ablack{font-weight: 900;}
 
+.container5{
+    display: grid;
+    width: 900px;
+    height: 350px;
+    grid-template-columns: repeat(9,1fr);
+    column-gap: 40px;
+    margin-left: 160px;
+    margin-right: auto;
+    margin-top: -160px;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-family: Archivo;
+    font-size: 160px;
+    font-style: italic;
+    color: white;
+}
+
+.Ithin{font-weight: 100;}
+.Iextra{font-weight: 200;}
+.Ilight{font-weight: 300;}
+.Iregular{font-weight: 400;}
+.Imedium{font-weight: 500;}
+.Isemi{font-weight: 600;}
+.Ibold{ font-weight: 700;}
+.Ixbold{font-weight: 800;}
+.Iblack{font-weight: 900;}
+
 /* Dropdown container */
 .dropdown1 {
     position: relative;
@@ -625,7 +654,7 @@ section{
     cursor: pointer;
     border-radius: 0px;
     margin-left: 80px;
-    margin-top: 270px;
+    margin-top: 250px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -660,7 +689,23 @@ section{
     background-color: #85B4F1;
 }
 
-/* Show dropdown when the "show" class is added */
+.dropbtn2{
+    background-color: #C14B4B;
+    color: #000;
+    padding: 5px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-left: 75px;
+    margin-top: 445px;
+}
+
+.dropbtn2:hover {
+    background-color: #85B4F1;
+}
+
 .show {
     display: block;
 }
@@ -673,15 +718,17 @@ section{
 
 .tt{
     margin-left: 350px;
+    margin-top: -150px;
     font-size: 18px;
     font-family: "Archivo Narrow";
     font-style: normal;
     font-weight: 700;
-    border: 2px solid #000;
+    border: 0px solid #000;
     padding: 10px;
-    border-radius: 40px;
-    background-color: #D9D9D9;
+    border-radius: 0px;
+    background-color: #0552B5;
     width: 750px;
+    color: #FFF;
 }
   
   .sample {
@@ -692,7 +739,7 @@ section{
     margin-right: 50px;
     font-size: 20px;
     line-height: 26px;
-    color: #0552B5
+    color: #C14B4B
   }
   
 
@@ -781,7 +828,7 @@ section{
     font-style: normal;
     font-weight: 400;
     width: 90px;
-    height: 90px
+    height: 90px;
 }
 
 .glyph:hover {
@@ -809,7 +856,7 @@ section{
 
 #overview-name {
     font-weight: bold;
-    color: #0552B5;
+    color: #85B4F1;
     text-align: center;
     font-family: Archivo;
     font-size: 200px;
@@ -824,11 +871,11 @@ section{
     flex-shrink: 0;
     background: #0552B5;
     margin-top: -365px;
-    margin-left: 205px;
+    margin-left: 280px;
 }
 
 #axis-of-variable{
-    margin-top: 100px;
+    margin-top: 160px;
     .overlay-text{
     position: relative;
     font-size: 90px;
@@ -861,82 +908,115 @@ section{
 }
 }
 
-.tt2{
-    margin-left: 200px;
+.slider-container1{
+    text-align: left; /* or right */
+    border: 2px solid #000;
+    padding: 20px;
+    background: rgba(250, 221, 93, 0.50);
+    height: 200px;
+    box-shadow: none;
     margin-top: -300px;
+    margin-left: 150px;
+    width: 1200px;
+}
+
+.slider-container1 h1{
     font-size: 18px;
     font-family: "Archivo Narrow";
     font-style: normal;
     font-weight: 700;
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 40px;
-    background: rgba(250, 221, 93, 0.50);
-    width: 800px;
 }
- 
+
+.slider-container1 #text {
+    font-weight: 400;
+    font-size: 3rem;
+    transition: font-weight 0.3s ease;
+    margin-left: 100px;
+}
+.weightSlider input[type="range"] {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.slider-container2 {
+    text-align: left; /* or right */
+    border: 2px solid #000;
+    padding: 20px;
+    background: rgba(250, 221, 93, 0.50);
+    height: 200px;
+    box-shadow: none;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 1200px;
+}
+
+.slider-container2 h1 {
+    font-size: 18px;
+    font-family: "Archivo Narrow";
+    font-style: normal;
+    font-weight: 700;
+}
+
+.slider-container2 #text2 {
+    font-weight: 400;
+    font-size: 3rem;
+    transition: font-weight 0.3s ease;
+    margin-left: 100px;
+}
+
+.widthSlider input[type="range"] {
+    width: 300px;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
 #fonts-in-use{
-    margin-top: 300px;
+    margin-top: -200px;
+    margin-left: -650px;
     padding: 100px;
     h1{
         color: #FFF;
         -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: #000;
+        -webkit-text-stroke-color: #0552B5;
         font-family: "Archivo Narrow", serif;
         font-size: 90px;
         font-style: italic;
         font-weight: 400;
         line-height: normal;
+        text-align: left;
+        letter-spacing: -4px;
+        text-shadow: -10px 10px #011A2D;
     }
 }
-
-.stickynote1{
-    background: #C14B4B;
-    display: block;
-    width: 500px;
-    height: 250px;
-    margin-top: -300px;
-    margin-left: 800px;
-    padding: 16px;
-    box-shadow: 5px 5px 7px #0552B5;
+.examples{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin-top: -550px;
+    margin-left: 80px;
 }
 
-.stickynote2{
-    background: #FADD5D;
-    display: block;
-    width: 500px;
-    height: 250px;
-    margin-top: -400px;
-    margin-left: 200px;
-    padding: 16px;
-    box-shadow: 5px 5px 7px #0552B5;
+a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
 }
 
-.tape0{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    column-gap: 10px;
-    width: 100px;
-    height: 29px;
-    flex-shrink: 0;
-    background: #86C9FD;
-    margin-left: 400px;
-    margin-top: -410px;
+a:hover {
+    transform: scale(1.3);
 }
 
-.more{
-    background-color: #0552B5;
-    width: 200px;
-    height: 80px;
-    color: white;
-    font-family: "Archivo", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    margin-left: 650px;
-    margin-top: 30px;
-    text-align: center;
-    position: relative;
+ .examples img {
+    border-radius: 0px; 
+    box-shadow: 6px 6px 10px #0552B5; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.examples img:hover {
+    opacity: 0.8;
 }
 
 .footer{
@@ -944,8 +1024,8 @@ section{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #C14B4B;
-    color: aliceblue;
+    background-color: #FADD5D;
+    color: white;
     text-align: center;
-    font-family: "Archivo", serif;    
+    font-family: "Archivo", serif;
 }
