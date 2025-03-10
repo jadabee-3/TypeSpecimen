@@ -19,13 +19,13 @@ initial-scale=1.0">
     <header>
         <nav class="navbar">
             <ul>
-                <li>ARCHIVO</li>
-                <li></li>
                 <li><a href="#meet">Designer</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#type-anatomy">Type Anatomy</a></li>
+                <li><a href="#styles">Styles</a></li>
                 <li><a href="#glyphs">Glyphs</a></li>
-                
+                <li><a href="#axis-of-variable">Variables</a></li>
+                <li><a href="#fonts-in-use">In Use</a></li> 
             </ul>
         </nav>
     </header>
@@ -194,7 +194,7 @@ initial-scale=1.0">
     </div>
 
     <div class="dropdown1">
-        <button class="dropbtn" onclick="toggleDropdown()">STYLES</button>
+        <button class="dropbtn" onclick="toggleDropdown()">ROMAN</button>
         <div class="dropdown-content" id="dropdownMenu">
             <a href="#targetDiv1">THIN 100</a>
             <a href="#targetDiv2">EXTRALIGHT 200</a>
@@ -205,6 +205,21 @@ initial-scale=1.0">
             <a href="#targetDiv7">BOLD 700</a>
             <a href="#targetDiv8">EXTRABOLD 800</a>
             <a href="#targetDiv9">BLACK 900</a>
+        </div>
+    </div>
+
+    <div class="dropdown1">
+        <button class="dropbtn2" onclick="toggleDropdown()">ITALIC</button>
+        <div class="dropdown-content" id="dropdownMenu">
+            <a href="#targetDiv1">THIN 100 ITALIC</a>
+            <a href="#targetDiv2">EXTRALIGHT 200 ITALIC</a>
+            <a href="#targetDiv3">LIGHT 300 ITALIC</a>
+            <a href="#targetDiv4">REGULAR 400 ITALIC</a>
+            <a href="#targetDiv5">MEDIUM 500 ITALIC</a>
+            <a href="#targetDiv6">SEMIBOLD 600 ITALIC</a>
+            <a href="#targetDiv7">BOLD 700 ITALIC</a>
+            <a href="#targetDiv8">EXTRABOLD 800 ITALIC</a>
+            <a href="#targetDiv9">BLACK 900 ITALIC</a>
         </div>
     </div>
 
@@ -222,6 +237,18 @@ initial-scale=1.0">
         <div id="targetDiv9" class="Ablack">a</div>
     </div>
 
+    <div class="container5">
+        <div id="targetDiv1" class="Ithin">a</div>
+        <div id="targetDiv2" class="Iextra">a</div>
+        <div id="targetDiv3" class="Ilight">a</div>
+        <div id="targetDiv4" class="Iregular">a</div>
+        <div id="targetDiv5" class="Imedium">a</div>
+        <div id="targetDiv6" class="Isemi">a</div>
+        <div id="targetDiv7" class="Ibold">a</div>
+        <div id="targetDiv8" class="Ixbold">a</div>
+        <div id="targetDiv9" class="Iblack">a</div>
+    </div>
+
     <div class="tt">
         <select onchange="updateFont(this.value)">
           <option value="sans-serif">Archivo </option>
@@ -235,7 +262,7 @@ initial-scale=1.0">
         <input type="range" id="line height" min="10" max="144" value="26" oninput="updateLineHeight(this.value)">
         TRACKING:
         <input type="range" id="letter-spacing" min="0" max="10" value="0" oninput="updateLetterSpacing(this.value)">
-      </div>
+    </div>
       
       <div class="sample" contenteditable="true">
         Lorem ipsum dolor sit amet. Non perspiciatis velit est rerum tenetur est porro soluta vel aliquam explicabo sit illum perspiciatis est error aliquid. Sed galisum galisum ad perspiciatis harum non voluptate animi ut temporibus mollitia.
@@ -311,53 +338,42 @@ initial-scale=1.0">
     <section id="axis-of-variable">
         <p class="overlay-text">AXIS OF VARIABLE</p>  
     </section>
-
-    <div class="tt2">
-        <select onchange="updateFont(this.value)">
-          <option value="sans-serif">Archivo </option>
-          <option style="sans-serif">Archivo Black</option>
-          <option style="sans-serif">Archivo Narrow</option>
-        </select>
-        Font Size: 
-        <input type="range" id="size" min="10" max="144" value="20" oninput="updateSize(this.value)">
-        Font Weight:
-        <select onchange="updateFontWeight(this.value)">
-            <option value="100">Thin</option>
-            <option value="200">Extra Light</option>
-    <option value="300">Light</option>
-    <option value="400">Regular</option>
-    <option value="500">Medium</option>
-    <option value="600">SemiBold</option>
-    <option value="700">Bold</option>
-    <option value="800">ExtraBold</option>
-    <option value="900">Black</option>
-  </select>
-  Font Width:
-  <input type="range" id="font-width" min="50" max="200" value="100" oninput="updateFontWidth(this.value)">
-</div>
-      </div>
-
-      <div class="sample" contenteditable="true">
-        The quick brown fox jumps over the lazy dog
-        </div>
+    
+    
+    <div class="slider-container1">
+        <h1>WEIGHT:</h1>
+        <input type="range" id="weightSlider" min="100" max="900" step="100" value="400">
+        <p class="weight" Weight: <span id="weightValue">400</span></p>
+        <p id="text">The quick brown fox jumps over the lazy dog</p>
+    </div>
+   
+    <div class="slider-container2">
+        <h1>WIDTH:</h1>
+        <input type="range" id="widthSlider" min="62" max="125" step="1" value="100">
+        <p class="width"><span id="widthValue">100</span></p>
+        <p id="text2">The quick brown fox jumps over the lazy dog</p>
+    </div> 
+    
 
     <section id="fonts-in-use">
-        <h1>FONTS  IN USE</h1>
+        <h1>
+            <div class="fonts">FONTS IN USE</div>
+        </h1>
     </section>
+
+    <div class="examples">
+        <a href="https://ipercubo.eu/"_blank>
+        <img src="images/IPERCUBO.jpeg" width="370px">
+    </a>
+    <a href="https://schnittstellen-projekt.de/wp/">
+        <img src="images/Schnittstellen.png" width="370px">
+    </a>
+    <a href="https://save-whales.com/?ref=maxibestof.one">
+        <img src="images/SAVE_WHALES.png" width="370px">
+    </a>
+    </div>
    
-    <div class="stickynote1"></div>
-    <div class="stickynote2"></div>
-
-    <div class="tape0">
-        <div class="tape1"></div>
-        <div class="tape2"></div>
-    </div>
-
-    <div class="more"> See More</div> 
-
-    <div class="footer">
-        <p>Footer</p>
-    </div>
+    <div class="footer">Footer</div>
 
 <script src="js/script.js"></script>
 </body>
