@@ -167,7 +167,7 @@ section{
     height: 500px;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
-    margin-left: 650px;
+    margin-left: 750px;
     margin-top: -615px;
 }
 
@@ -320,7 +320,7 @@ section{
 }
 
 #type-anatomy{
-    margin-left: 650px;
+    margin-left: 500px;
     margin-top: -180px;
     h1{ text-align: center;
         -webkit-text-stroke-width: 20px;
@@ -520,7 +520,7 @@ section{
     margin-top: -333px;
 }
 .italic{
-    margin-left: 1000px;
+    margin-left: 900px;
     margin-top: -333px;
     text-align: right;
 }
@@ -561,8 +561,8 @@ section{
     grid-template: 1fr 1fr 1fr 1fr;
     row-gap: 15px;
     color: #cccccc;
-    margin-left: auto;
-    margin-right: 10px;
+    margin-left: 850px;
+    margin-right: 5px;
     margin-top: -350px;
     text-align: right;
     font: 40px Archivo, serif;
@@ -893,11 +893,11 @@ section{
 .overlay-text::before{
     content: "AXIS OF VARIABLE";
     position: absolute;
-    left: -10px;
-    top: -12px;
+    left: -5px;
+    top: -9px;
     color: #FFF;
     text-align: center;
-    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #000;
     font-family: Archivo;
     font-size: 90px;
